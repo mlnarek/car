@@ -282,6 +282,71 @@ a {
     left: 0;
 }
 
+.benefit {
+	background: url(../img/bg/benefit.png) no-repeat top center/cover;
+	padding: 62px 0 90px 0;
+}
+
+.benefit__content {
+	gap: 60px 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.benefit__content-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 10px 0;
+}
+
+.white_btn {
+	background: white;
+}
+
+.benefit__subtitle {
+	color: white;
+}
+
+.benefit__content-info {}
+
+.benefit__content-info-list {
+	display: flex;
+	column-gap: 16px;
+	justify-content: center;
+}
+
+.benefit__content-info-item {
+	width: 19%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 40px 6px 40px;
+	gap: 30px 0;
+	border-radius: 5px;
+}
+
+.benefit__content-info-wrap {}
+
+.benefit__content-info-wrap svg {
+	width: 35px;
+	height: 35px;
+}
+
+.benefit__content-info-wrap path {
+	fill: black;
+}
+
+.benefit__content-info-text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
+	color: #252525;
+}
+
 .services {
     padding: 62px 0px 90px;
 }
@@ -319,7 +384,6 @@ a {
     border: 2px solid #D4D4D4;
     border-radius: 4px;
     box-sizing: border-box;
-    position: absolute;
     width: 170px;
     height: 44px;
     text-align: center;
@@ -347,35 +411,38 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    transition: ;
 }
 
 .order {
     background: url(../img/bg/back2.png) no-repeat center/cover;
-    color: #ffffff;
-    padding-bottom: 50px;
-    padding-top: 272px;
-    display: flex;
-    flex-direction: column;
+	height: 50vh;
+	border: 2px solid white;
+	border-radius: 5px;
+	padding: 12px;
+	min-width: 360px;
+	font-size: 16px;
+	line-height: 18px;
+	color: white;
+	cursor: pointer;
 }
 
 .container {}
 
 .order__desc {
-    height: 99px;
-    font-size: 28px;
-    line-height: 33px;
-    text-align: center;
-    width: 78%;
-    color: #ffffff;
+	font-size: 28px;
+	line-height: 33px;
+	text-align: center;
+	width: 78%;
 }
 
-.order__content {}
+.order__content {
+    display: flex;
+	column-gap: 94px;
+}
 
 .call__content-info-fail {
-    color: #FFFFFF;
-    width: 286px;
-    height: 36px;
+	font-size: 16px;
+	line-height: 18px;
 }
 
 .call__content-add-fail {
@@ -387,18 +454,99 @@ a {
     border: 2px solid white;
     color: white;
     min-width: 170px;
-    position: absolute;
+    display: inline-block;
 }
 
-.order-form {}
+.order-form {
+    display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 32px 0;
+}
 
+.call__content-info-order-input {
+	background: white;
+	border-radius: 5px;
+	border: none;
+	padding: 12px 0 12px 17px;
+	min-width: 360px;
+}
 
+.call__content-info-order-btn {
+	background: transparent;
+	border: 2px solid white;
+	border-radius: 5px;
+	padding: 12px;
+	min-width: 360px;
+	font-size: 16px;
+	line-height: 18px;
+	color: white;
+	cursor: pointer;
+}
 
-/* background: black;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: .5;
-    z-index: -1; */
+.locations {
+	background: url(../img/bg/Карта.png) no-repeat center/cover;
+	height: 30vh;
+}
+
+.footer {
+	background: #404040;
+	color: white;
+	padding: 18px 0;
+}
+
+.footer__content {
+	display: flex;
+	column-gap: 46px;
+}
+
+.footer__content-wrap {
+	max-width: 160px;
+	max-height: 50px;
+}
+
+.header__content-wrap-img {}
+
+.footer__content-list {
+	display: flex;
+	column-gap: 50px;
+	align-items: center;
+	list-style: none;
+	flex-wrap: wrap;
+}
+
+.footer__content-item {
+	display: flex;
+	align-items: flex-start;
+}
+
+.footer__content-item-text-block {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__content-item-text {
+	color: white;
+}
+
+.header__content-tell-block {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__content-item-tell {
+	color: white;
+}
+
+.footer__content-block-item-first {
+	display: flex;
+	column-gap: 50px;
+	align-items: flex-start;
+	height: 80%;
+}
+
+.footer__content-block-item-two {
+	display: flex;
+	column-gap: 50px;
+}
+
